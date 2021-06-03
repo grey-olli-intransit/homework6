@@ -1,0 +1,61 @@
+----> 15:14:57 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ echo "This is a test. Это тест." > ./build/testfile.ascii 
+----> 15:15:42 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ ./build/hw6_search 
+
+Usage: thisexecutable <search_string> <file_path>
+----> 15:15:58 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ ./build/hw6_search Это ./build/testfile.ascii 
+Looking for chars 'Это' in file ./build/testfile.ascii ..
+Search string 'Это' found.
+----> 15:16:15 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ ./build/hw6_search "a test" ./build/testfile.ascii 
+Looking for chars 'a test' in file ./build/testfile.ascii ..
+Search string 'a test' found.
+----> 15:16:42 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ ./build/hw6_search This ./build/testfile.ascii 
+Looking for chars 'This' in file ./build/testfile.ascii ..
+Search string 'This' found.
+----> 15:17:09 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ ./build/hw6_search ываыва ./build/testfile.ascii 
+Looking for chars 'ываыва' in file ./build/testfile.ascii ..
+Search string 'ываыва' not found.
+----> 15:17:17 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ ./build/hw6_search find ./build/testfile.ascii 
+Looking for chars 'find' in file ./build/testfile.ascii ..
+Search string 'find' not found.
+----> 15:17:24 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6
+$ 
+----> 15:36:41 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6/build
+$ ./hw6_filemerge 
+Проверочная_строка_в_первом_файле.
+Проверочная_строка_в_первом_файле.
+Проверочная_строка_в_первом_файле.
+Проверочная строка во втором файле.
+Проверочная строка во втором файле.
+Проверочная строка во втором файле.
+----> 15:36:53 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6/build
+$ ls
+CMakeCache.txt  cmake_install.cmake  hw6_search  output1.txt  output-merged.txt
+CMakeFiles      hw6_filemerge        Makefile    output2.txt  testfile.ascii
+----> 15:36:54 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6/build
+$ cat output1.txt 
+Проверочная_строка_в_первом_файле.
+Проверочная_строка_в_первом_файле.
+Проверочная_строка_в_первом_файле.
+----> 15:37:03 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6/build
+$ cat output2.txt 
+Проверочная строка во втором файле.
+Проверочная строка во втором файле.
+Проверочная строка во втором файле.
+----> 15:37:06 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6/build
+$ cat output-merged.txt 
+Проверочная_строка_в_первом_файле.
+Проверочная_строка_в_первом_файле.
+Проверочная_строка_в_первом_файле.
+Проверочная строка во втором файле.
+Проверочная строка во втором файле.
+Проверочная строка во втором файле.
+----> 15:37:11 Thu Jun 03 olli@dell15 ~/bin/cpp/geekbrains/homework6/build
+$ 
+ 
